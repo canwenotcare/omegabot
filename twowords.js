@@ -1,5 +1,10 @@
+var oneletter = ["A","I","K","U","Y"];
+var twoletters = [ "A","AH","AI","AM","AN","AS","AT","BE","BY","CD","DJ","DO","EH","EQ","EW","FI","FX","GJ","GO","HA","HE","HI","HQ","I","IF","JK","KB","LZ",
+  "ME","MY","NO","OC","OD","OF","OH","OK","ON","OR","PS","QA","RX","SO","TO","TV","TY","UH","UM","UP","US","VI","WE","XD","YA","ZZ"];
+  
+
 var threeletters = [
-  "AGE","ALL","ANY","ASK",
+ "AAH","ACT","ADD","AGE","ALL","AND","ANY","ASK",
   "BAD","BIT","BIZ","BOX","BUY",
   "CDJ","CRY","CUT",
   "DAY","DEV","DRY",
@@ -7,10 +12,10 @@ var threeletters = [
   "FAQ","FAT","FEW","FIT","FIX","FLY",
   "GAP","GET","GOD",
   "HER","HIM","HOW",
-  "IFS",
+  "IFS","INS",
   "JOB","JOY",
   "KEY","KIT",
-  "LAW","LIE",
+  "LAW","LIE","LOL",
   "MAN","MAP","MAX","MIX",
   "NET","NEW","NIL","NOW",
   "OFF","OUT","OWN",
@@ -18,12 +23,12 @@ var threeletters = [
   "QUA",
   "RIG",
   "SAY","SHE","SKY",
-  "TIE","TOP","TRY",
-  "USE",
+  "THE","TIE","TOO","TOP","TRY",
+  "UPS","USE",
   "VET","VOX",
   "WAY","WEB","WHO","WHY","WIN",
   "XTC","XXX",
-  "YET","YOU",
+  "YES","YET","YOU",
   "ZEN"
   ];
 var fourletters = [
@@ -49,7 +54,7 @@ var fourletters = [
   "READ","REST","RIDE","RULE","RUSH",
   "SAVE","SHOP","SHOW","SLOW",
   "STAY","STEP","SUCH",
-  "TAKE","TALK","TELL","TEST",
+  "TAKE","TALK","TELL","TEST","THAN","THAT","THEN","THEY","THIS",
   "TOOL","TURN","TYPE",
   "UNDO",
   "VIEW",
@@ -83,7 +88,7 @@ var fiveletters = [
   "SERVE","SHADE","SHAKE","SHAPE","SHARE","SHINE","SHORT",
   "SHOUT","SOUND","SPACE",
   "SPEND","STAND","START","STILL","STUDY",
-  "TASTE","THINK","TITLE","TOTAL","TOUCH",
+  "TASTE","THEIR","THINK","TITLE","TOTAL","TOUCH",
   "TRUST",
   "VOICE","VISIT",
   "WASTE","WATCH","WATER","WORRY",

@@ -119,16 +119,19 @@ function cycletext(text){
         }
       }
 }
-var wordlist = threeletters.concat(fourletters.concat(fiveletters));
+var wordlist = fiveletters.concat(fourletters.concat(threeletters.concat(twoletters.concat(oneletter))));
 function getwords(source){
   var wordsource = outputtext;
   var wordstack = [];var index = 0;
-  for(index in source)if(wordsource.includes(source[index]))
+  for(index in source)if(wordsource.includes(source[index])){
     wordstack.push(source[index]);
+  }
     return wordstack;
 }
 function cyclewords(){
   var index = 0;
+  for(index in oneletter)cycletext(oneletter[index] + "_");
+  for(index in twoletters)cycletext(twoletters[index] + "_");
   for(index in threeletters)cycletext(threeletters[index] + "_");
   for(index in fourletters)cycletext(fourletters[index] + "_");
   for(index in fiveletters)cycletext(fiveletters[index] + "_");
@@ -149,7 +152,7 @@ function stripspaces(){
   outputtext = outputtext.split('_').join('');
 }
 
-var pullcount=5;var pulldepth=3;
+var pullcount=7;var pulldepth=4;
 function pullresponse(){
   outputtext = "";cyclewords();stripspaces();
   var tempstack = getwords(wordlist);
