@@ -1,9 +1,9 @@
-var letters=['A','B','C','D','E','F','G',
-      'H','I','J','K','L','M','N','O','P',
-      'Q','R','S','T','U','V','W','X','Y','Z'];
+var letters=['a','b','c','d','e','f','g',
+      'h','i','j','k','l','m','n','o','p',
+      'q','r','s','t','u','v','w','x','y','z'];
 var weights = [26][26];
 var outputtext = "";
-var inputtext = "ASK:";
+var inputtext = "";
 var initialize = function() {
   inputtext = "> ";
   outputtext = "";
@@ -103,19 +103,19 @@ function cycletext(text){
   for(var index in text){
         switch(text[index]){
           case '_':cycle(-1);break;
-          case 'A':cycle(0);break;case 'B':cycle(1);break;
-          case 'C':cycle(2);break;case 'D':cycle(3);break;
-          case 'E':cycle(4);break;case 'F':cycle(5);break;
-          case 'G':cycle(6);break;case 'H':cycle(7);break;
-          case 'I':cycle(8);break;case 'J':cycle(9);break;
-          case 'K':cycle(10);break;case 'L':cycle(11);break;
-          case 'M':cycle(12);break;case 'N':cycle(13);break;
-          case 'O':cycle(14);break;case 'P':cycle(15);break;
-          case 'Q':cycle(16);break;case 'R':cycle(17);break;
-          case 'S':cycle(18);break;case 'T':cycle(19);break;
-          case 'U':cycle(20);break;case 'V':cycle(21);break;
-          case 'W':cycle(22);break;case 'X':cycle(23);break;
-          case 'Y':cycle(24);break;case 'Z':cycle(25);break;
+          case 'a':cycle(0);break;case 'b':cycle(1);break;
+          case 'c':cycle(2);break;case 'd':cycle(3);break;
+          case 'e':cycle(4);break;case 'f':cycle(5);break;
+          case 'g':cycle(6);break;case 'h':cycle(7);break;
+          case 'i':cycle(8);break;case 'j':cycle(9);break;
+          case 'k':cycle(10);break;case 'l':cycle(11);break;
+          case 'm':cycle(12);break;case 'n':cycle(13);break;
+          case 'o':cycle(14);break;case 'p':cycle(15);break;
+          case 'q':cycle(16);break;case 'r':cycle(17);break;
+          case 's':cycle(18);break;case 't':cycle(19);break;
+          case 'u':cycle(20);break;case 'v':cycle(21);break;
+          case 'w':cycle(22);break;case 'x':cycle(23);break;
+          case 'y':cycle(24);break;case 'z':cycle(25);break;
         }
       }
 }
@@ -177,7 +177,7 @@ function pullresponse(){
   for(word in wordstack){
     outputtext+=wordstack[word] + " ";
   }
-  outputtext = outputtext.trim() + "!";
+  outputtext = outputtext.trim();
 }
 window.addEventListener("keydown",function(event){
   if(event.defaultPrevented)return;
@@ -194,32 +194,32 @@ window.addEventListener("keydown",function(event){
       } break; //ENTER
     case 187: initialize();break;//EQUALS
     case 32: inputtext+=" ";cycle(-1);break;//SPACEBAR
-    case 65: inputtext+="A";cycle(0);break;
-    case 66: inputtext+="B";cycle(1);break;
-    case 67: inputtext+="C";cycle(2);break;
-    case 68: inputtext+="D";cycle(3);break;
-    case 69: inputtext+="E";cycle(4);break;
-    case 70: inputtext+="F";cycle(5);break;
-    case 71: inputtext+="G";cycle(6);break;
-    case 72: inputtext+="H";cycle(7);break;
-    case 73: inputtext+="I";cycle(8);break;
-    case 74: inputtext+="J";cycle(9);break;
-    case 75: inputtext+="K";cycle(10);break;
-    case 76: inputtext+="L";cycle(11);break;
-    case 77: inputtext+="M";cycle(12);break;
-    case 78: inputtext+="N";cycle(13);break;
-    case 79: inputtext+="O";cycle(14);break;
-    case 80: inputtext+="P";cycle(15);break;
-    case 81: inputtext+="Q";cycle(16);break;
-    case 82: inputtext+="R";cycle(17);break;
-    case 83: inputtext+="S";cycle(18);break;
-    case 84: inputtext+="T";cycle(19);break;
-    case 85: inputtext+="U";cycle(20);break;
-    case 86: inputtext+="V";cycle(21);break;
-    case 87: inputtext+="W";cycle(22);break;
-    case 88: inputtext+="X";cycle(23);break;
-    case 89: inputtext+="Y";cycle(24);break;
-    case 90: inputtext+="Z";cycle(25);break;
+    case 65: inputtext+="a";cycle(0);break;
+    case 66: inputtext+="b";cycle(1);break;
+    case 67: inputtext+="c";cycle(2);break;
+    case 68: inputtext+="d";cycle(3);break;
+    case 69: inputtext+="e";cycle(4);break;
+    case 70: inputtext+="f";cycle(5);break;
+    case 71: inputtext+="g";cycle(6);break;
+    case 72: inputtext+="h";cycle(7);break;
+    case 73: inputtext+="i";cycle(8);break;
+    case 74: inputtext+="j";cycle(9);break;
+    case 75: inputtext+="k";cycle(10);break;
+    case 76: inputtext+="l";cycle(11);break;
+    case 77: inputtext+="m";cycle(12);break;
+    case 78: inputtext+="n";cycle(13);break;
+    case 79: inputtext+="o";cycle(14);break;
+    case 80: inputtext+="p";cycle(15);break;
+    case 81: inputtext+="q";cycle(16);break;
+    case 82: inputtext+="r";cycle(17);break;
+    case 83: inputtext+="s";cycle(18);break;
+    case 84: inputtext+="t";cycle(19);break;
+    case 85: inputtext+="u";cycle(20);break;
+    case 86: inputtext+="v";cycle(21);break;
+    case 87: inputtext+="w";cycle(22);break;
+    case 88: inputtext+="x";cycle(23);break;
+    case 89: inputtext+="y";cycle(24);break;
+    case 90: inputtext+="z";cycle(25);break;
     default: break;}});
 window.addEventListener("resize",resize);
 window.onload = function () {initialize();resize();draw();};
