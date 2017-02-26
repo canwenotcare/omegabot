@@ -74,7 +74,7 @@ var hstep = Math.floor(height / 44);
 var canvas = document.getElementById('canvas');
 var vc = canvas.getContext('2d');
 vc.lineWidth=1;vc.font="7px mono";
-var rgb = [255,128,0];
+var rgb = [192,0,255];
 function fill(depth){vc.fillStyle=
                   'rgb(' + (rgb[0]*depth) +
                   ',' + (rgb[1]*depth) + 
